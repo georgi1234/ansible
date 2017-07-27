@@ -1,0 +1,9 @@
+---
+ - hosts: Local
+   user: root
+   tasks:
+     - name: apache
+       yum:
+        name: httpd
+        state: present
+     

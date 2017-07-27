@@ -1,0 +1,16 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name: copy
+      copy: 
+       src: /etc/ansible/rhel/cp.sh
+       dest: /home
+       mode: 755  
+#       own: root
+#       group: root
+    - name: exec
+      shell: source /home/joro/proxy
+    - name: reboot
+      shell: reboot
+     

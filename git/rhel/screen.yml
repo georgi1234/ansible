@@ -1,0 +1,9 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name: install screen
+      yum:
+       name: screen
+       state: installed 
+   

@@ -1,0 +1,9 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name:  
+      copy: src=/etc/ansible/rhel/ping.sh dest=/home
+    - name: rum
+      shell: ping dir.bg
+ 

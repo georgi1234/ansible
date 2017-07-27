@@ -1,0 +1,11 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name: rescan HDD
+      copy: 
+       src: /home/joro/rescan
+       dest: /home
+       mode: 0777
+    - name: rrr
+      shell: /home/rescan 

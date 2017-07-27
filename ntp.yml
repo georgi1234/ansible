@@ -1,0 +1,11 @@
+---
+ - hosts: Local
+   user: root
+   tasks:
+    - name: install ntp
+      yum:
+       name: ntp
+       state: present
+    - name:
+      shell: systemctl stop chronyd && systemctl start ntpd
+      

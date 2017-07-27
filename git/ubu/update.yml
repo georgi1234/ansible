@@ -1,0 +1,10 @@
+---
+ - hosts: Local
+   user: root
+   tasks:
+    - name: update packets
+      yum:
+        name: '*'
+        state: latest
+
+

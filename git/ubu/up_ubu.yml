@@ -1,0 +1,9 @@
+---
+ - hosts: UBU
+   user: root
+   tasks:
+    - name: copy
+      copy: 
+       src: /etc/ansible/'*'
+       dest: /etc/ansible/
+            

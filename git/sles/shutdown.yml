@@ -1,0 +1,6 @@
+---
+ - hosts: SAP
+   user: root
+   tasks:
+    - name: shut
+      shell: shutdown -h now

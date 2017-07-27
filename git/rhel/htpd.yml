@@ -1,0 +1,8 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name: unistall apah
+      yum: name=httpd state=installed
+    - name: run
+      service: name=httpd state=started

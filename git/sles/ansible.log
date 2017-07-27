@@ -1,0 +1,17 @@
+2017-05-01 07:48:10,604 p=3697 u=root |  PLAY [SAP] *********************************************************************
+2017-05-01 07:48:10,806 p=3697 u=root |  TASK [setup] *******************************************************************
+2017-05-01 07:48:14,871 p=3697 u=root |  fatal: [SAP]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'sap,192.168.204.128' (RSA) to the list of known hosts.\r\nPermission denied (publickey,keyboard-interactive).\r\n", "unreachable": true}
+2017-05-01 07:48:14,881 p=3697 u=root |  	to retry, use: --limit @/etc/ansible/sles/shutdown.retry
+
+2017-05-01 07:48:14,883 p=3697 u=root |  PLAY RECAP *********************************************************************
+2017-05-01 07:48:14,886 p=3697 u=root |  SAP                        : ok=0    changed=0    unreachable=1    failed=0   
+2017-05-01 07:48:46,400 p=3712 u=root |  SAP | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,keyboard-interactive).\r\n", 
+    "unreachable": true
+}
+2017-05-01 07:48:56,844 p=3727 u=root |  SAP | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,keyboard-interactive).\r\n", 
+    "unreachable": true
+}

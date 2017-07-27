@@ -1,0 +1,13 @@
+---
+ - hosts: Local
+   user: root
+   vars:
+    motd_welkome: 'For custom use only'
+   tasks:  
+    - name: sample motd
+      copy:
+       dest: /etc/motd
+       content: "{{ motd_welkome}}"
+
+
+

@@ -1,0 +1,17 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name: copy
+      copy:
+       src: /etc/ansible/rhel/yum.sh
+       dest: /root/yum_up.sh
+       mode: 0755
+    - name: update
+      script: /etc/ansible/rhel/yum.sh 
+#      yum:
+#       name: '*'
+#       state: latest
+
+
+

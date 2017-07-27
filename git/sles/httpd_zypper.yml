@@ -1,0 +1,9 @@
+---
+ - hosts: SAP
+   user: root
+   tasks:
+     - name: http
+       yast:
+        name: http
+        state: present
+     

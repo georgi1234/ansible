@@ -1,0 +1,6 @@
+---
+ - hosts: Local
+   user: root
+   tasks: 
+    - name: install netcat
+      yum: name=nc.x86_64 state=installed 

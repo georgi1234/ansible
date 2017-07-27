@@ -1,0 +1,11 @@
+---
+ - hosts: SAP
+   user: root
+   vars:
+    motd_warning: 'SAP is only for company users.'
+   task:
+   - name: sample motd
+     copy:
+      dest: /etc/motd    
+      content: "{{ motd_warning }}"      
+    

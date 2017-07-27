@@ -1,0 +1,10 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name: 
+    shell: easy_install pip
+    shell: update
+    shell: yum install ansible 
+    
+    

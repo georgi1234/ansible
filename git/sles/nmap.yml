@@ -1,0 +1,8 @@
+---
+ - hosts: SAP
+   user: root
+   tasks:
+    
+     - zypper:
+        name: squid
+        state: removed

@@ -1,0 +1,12 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks: 
+    - name: 
+      group:
+       name: ansible
+       gid: 2000
+    - name: create user
+      user:
+       name: ansible
+       uid: 2000

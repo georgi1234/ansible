@@ -1,0 +1,13 @@
+---
+ - hosts: Sles
+   user: root
+   tasks:
+    - file:
+       path: /root/.ssh
+       state: directory
+       mode: 0700
+    - name: add keys
+      copy:
+       src: /root/.ssh/id_rsa.pub
+       dest: /root/.ssh/id_rsa.pub
+       mode: 0600 

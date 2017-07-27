@@ -1,0 +1,11 @@
+---
+ - hosts: SAP 
+   user: root
+   vars: 
+    motd_restricted: 'Only for custom use. \n Admin. '
+   tasks:
+    - name: restricted motd
+      copy:
+       dest: /etc/motd
+       content: "{{ motd_restricted }}"
+

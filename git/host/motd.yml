@@ -1,0 +1,10 @@
+--- 
+ - hosts: Local 
+   user: root
+   vars:
+    motd_welkom: 'For customer uses only'
+   tasks: 
+   - name: sample motd
+     copy:
+      dest: /etc/motd
+      content: "{{ motd_welkom }}"

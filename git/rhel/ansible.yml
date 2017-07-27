@@ -1,0 +1,8 @@
+---
+ - hosts: rhel7
+   user: root
+   tasks:
+    - name:
+      shell: yum -y install ansible
+ 
+        

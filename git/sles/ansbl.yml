@@ -1,0 +1,13 @@
+---
+ - hosts: SAP
+   user: root
+   vars:
+    files: '`ls /etc/ansible/`' 
+   tasks:
+    - name: copy files
+      copy:
+       src: "{{ files }}"
+       dest: /home/
+#       owner: root
+#       group: root
+#       mode: 644 
