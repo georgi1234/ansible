@@ -1,0 +1,7 @@
+sudo pip install passlib
+python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())"
+
+- hosts: test
+  tasks:
+  - name: Change root password
+    user: name=root update_password=always password=HASHGOESHERE
