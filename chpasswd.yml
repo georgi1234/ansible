@@ -5,3 +5,9 @@ python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_c
   tasks:
   - name: Change root password
     user: name=root update_password=always password=HASHGOESHERE
+
+– name: Update root password for the environment
+  user:
+  name: “root”
+  update_password: always
+  password: “{{ root_pw|password_hash(‘sha512’) }}”
